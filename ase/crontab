@@ -1,0 +1,17 @@
+To set up the script to run every day at 11:59 am:
+
+Open Terminal
+
+Type crontab -e
+
+Type i to enter edit more
+
+Paste:
+
+59 11 * * 1-5 cd /users/insertfoldernamehere/desktop/ase && /usr/bin/python2 ase_updated.py
+
+Press Escape
+
+Type :wq to save and exit
+
+Give terminal and /usr/sbin/cron full disk access in settings>security and privacy>privacy
